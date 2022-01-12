@@ -22,7 +22,7 @@
 
   
 
-  <title>小伙伴们 | Viglong的海岸线</title>
+  <title>Sitemap小踩坑 | Viglong的海岸线</title>
 
   
 
@@ -43,7 +43,7 @@
   <div class="root-container">
     
 <!-- header container -->
-<header class="header-container">
+<header class="header-container post">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=ID"></script>
@@ -105,63 +105,119 @@
 
   
   
-
-  
-  
     <div class="header-content">
-      <div class="post-text layout-block layout-padding">
-        <h1 class="title-wrap">小伙伴们</h1>
-        
-          <h2 class="title-sub-wrap">哈喽，一起来玩！</h2>
-        
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">Sitemap小踩坑</h1>
+          <h2 class="title-sub-wrap">
+            <strong>Viglong</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2022-01-12T14:27:30.000Z" itemprop="datePublished">2022-01-12</time>
+          </h2>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/categories/2022%E5%AF%92%E5%81%87/">📒 2022寒假</a></li>
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/tags/%E6%90%AD%E5%BB%BA%E8%B8%A9%E5%9D%91/">🏷️ 搭建踩坑</a></li>
+  
+</ul>
+        </div>
       </div>
     </div>
+  
+
+  
   
   <!-- <script src="https://leancloud.cn/scripts/lib/av-0.4.6.min.js"></script>
   <script>AV.initialize("wOqVOnwlsvHKyuFO19CVPkSw-gzGzoHsz", "HXhFmP9FTnxoUj1q4sbIj3g4");</script> -->
 </header>
 
-    <!-- 分页(其他自定义页面) -->
+    <!-- 文章 -->
 
-<!-- 自定义页面 -->
-
+<!-- 文章内容 -->
 <div class="body-container">
   <article class="content-container layout-block post-container">
     <div class="article-info">
       
+      
+      
+      
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        
+        <h3 id="sitemap小踩坑"><a href="#sitemap小踩坑" class="headerlink" title="sitemap小踩坑"></a>sitemap小踩坑</h3><p>昨天下午使用Google Console验证了网站。之后又向Google提交了sitemap，这里小踩一坑（其实大概是虚惊一场）。</p>
+<p>在网上搜索“hexo+sitemap”关键字就可以找到很多相关的教程，流程基本上也都是一样的：</p>
+<p>第一步先安装hexo-generator-sitemap，在Hexo目录下打开Git Bash，然后使用如下命令安装</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+
+<p>即可安装sitemap的生成工具（第一行可以用于Google的站长工具，第二行是百度的，两个类似，因为我的博客用的是github page服务，所以就没有向百度提交），然后在根目录的_config.yml中找到url一项进行修改，改成自己的域名即可。</p>
+<p>之后每一次使用部署命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>都会自动生成站点地图文件sitemap.xml。在public文件夹里面就可以找到，部署的时候也能够同步上去。</p>
+<p>接着做好在Google上的网站验证（具体方法网上也很多，主流的方案是部署一个.html的文件到代码仓库里面进行验证）。验证完成后我提交了sitemap，显示成果提交但立刻在status一栏出现“couldn’t fetch”红色字样。点进去详情没有报错，只是显示“sitemap could not be read”。几乎是本能地把这种提示和各种oj的报错联系起来——那么肯定是我哪里写错了。</p>
+<p>结果在百度上兜了好几圈，没有找到什么有用的解答信息，因为一般来说这种生成器也不会出现什么格式错误。</p>
+<p>最后还是在Google上找到了解答，先是看到了下面这篇回答：<a target="_blank" rel="noopener" href="https://support.google.com/webmasters/thread/12746546/error-sitemap-could-not-be-read-couldn-t-fetch?hl=en">https://support.google.com/webmasters/thread/12746546/error-sitemap-could-not-be-read-couldn-t-fetch?hl=en</a></p>
+<p>虽然问题不同，但是解答的老哥非常耐心地说了“一般而言都是处于pending状态”。我当时看到寻思是会显示“Pending”的提示字样而不是出现一个红色的字体。又看了几篇文章，没有什么头绪，正准备在自己投递问题的时候看到了另一篇文章：<a target="_blank" rel="noopener" href="https://www.jcchouinard.com/sitemap-could-not-be-read-couldnt-fetch-in-google-search-console/">https://www.jcchouinard.com/sitemap-could-not-be-read-couldnt-fetch-in-google-search-console/</a></p>
+<p>直接命中问题所在，按照文中所述方式进行访问验证，谷歌爬虫确实可以访问到我的sitemap，而我也没有写错任何东西。说明接下来的事情就是交给时间和谷歌了。应该过段时间就能在谷歌上搜到博客了。</p>
+
       </section>
 
       
       
-        <section class="page-link-container">
+        <nav class="article-nav">
           
-            <div class="link-item layout-padding">
-              <a href="https://www.pixiv.net/users/39546389/" title="我的pixiv主页" class="content-padding--primary soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
-                
-                <div>
-                  <h4 class="text-ellipsis">我的pixiv主页</h4>
-                  
-                </div>
-              </a>
-            </div>
           
-            <div class="link-item layout-padding">
-              <a href="https://js2xx.xin/" title="Js2xxx - Mosi mita!" class="content-padding--primary soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
-                
-                <div>
-                  <h4 class="text-ellipsis">Js2xxx - Mosi mita!</h4>
-                  
-                </div>
-              </a>
-            </div>
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="/image/56417589_p0.jpg"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2022/01/11/%E5%85%B3%E4%BA%8E%E6%88%91%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2%E8%BF%99%E4%BB%B6%E4%BA%8B/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">关于开始写博客这件事</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
           
-        </section>
+        </nav>
       
 
-      
-      
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+    <div class="valine-container comments-container content-padding--primary soft-size--large soft-style--box">
+      <div id="valine_thread" class="valine-thread"></div>
+    </div>
+    <script type="text/javascript" src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script type="text/javascript" src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script type="text/javascript">
+      new Valine({
+        el: "#valine_thread",
+        appId: "vTbz71XbcTVBFWC6N2d4bI7I-gzGzoHsz",
+        appKey: "JCp99yb66Lt56Wkl0uW2svp6",
+        avatar: "mm",
+        placeholder: "随便说点什么叭～",
+        notify: true,
+        visitor: true,
+        pageSize: 10,
+      });
+    </script>
+  
+
+  
+  
+
+
+      </section>
     </div>
     <div class="widget-info">
       <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
@@ -198,6 +254,8 @@
     </div>
   </div>
 </section>
+
+      
 
       
 <section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
@@ -255,7 +313,6 @@
     </div>
   </article>
 </div>
-
 
     <!-- footer container -->
 <footer id="footer" class="footer">
