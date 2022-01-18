@@ -79,11 +79,11 @@
     
     
     <entry>
-      <title>一个比较完整的测试</title>
-      <link href="/2022/01/11/%E5%86%8D%E6%AC%A1%E6%B5%8B%E8%AF%95/"/>
-      <url>/2022/01/11/%E5%86%8D%E6%AC%A1%E6%B5%8B%E8%AF%95/</url>
+      <title>这是一篇测试的博客</title>
+      <link href="/2022/01/11/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/"/>
+      <url>/2022/01/11/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/</url>
       
-        <content type="html"><![CDATA[<h1 id="一个比较完整的测试"><a href="#一个比较完整的测试" class="headerlink" title="一个比较完整的测试"></a>一个比较完整的测试</h1><p>发现这个主题没有提供友链的页面，不过暂时我也没啥友链hhhh<br>开了一下valine的评论功能<br>然后大概知道怎么换图片了<br>暂时没有使用图床所以说目前就是用一些本地的图片<br>以后会把图床什么的加上去的<br>对于我这个没有学过前端和web的小白来说，还真是折腾（x</p>]]></content>
+        <content type="html"><![CDATA[<p>这是一篇测试的博客</p>]]></content>
       
       
       <categories>
@@ -104,11 +104,11 @@
     
     
     <entry>
-      <title>这是一篇测试的博客</title>
-      <link href="/2022/01/11/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/"/>
-      <url>/2022/01/11/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/</url>
+      <title>一个比较完整的测试</title>
+      <link href="/2022/01/11/%E5%86%8D%E6%AC%A1%E6%B5%8B%E8%AF%95/"/>
+      <url>/2022/01/11/%E5%86%8D%E6%AC%A1%E6%B5%8B%E8%AF%95/</url>
       
-        <content type="html"><![CDATA[<p>这是一篇测试的博客</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="一个比较完整的测试"><a href="#一个比较完整的测试" class="headerlink" title="一个比较完整的测试"></a>一个比较完整的测试</h1><p>发现这个主题没有提供友链的页面，不过暂时我也没啥友链hhhh<br>开了一下valine的评论功能<br>然后大概知道怎么换图片了<br>暂时没有使用图床所以说目前就是用一些本地的图片<br>以后会把图床什么的加上去的<br>对于我这个没有学过前端和web的小白来说，还真是折腾（x</p>]]></content>
       
       
       <categories>
