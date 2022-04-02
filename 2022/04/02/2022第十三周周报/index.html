@@ -22,7 +22,7 @@
 
   
 
-  <title>Sitemap小踩坑 | Viglong的海岸线</title>
+  <title>2022第十三周周报 | Viglong的海岸线</title>
 
   
 
@@ -55,7 +55,7 @@
   </script>
 
   
-    <div class="post-image" style="background-image: url(/image/loundraw1.png)"></div>
+    <div class="post-image" style="background-image: url(/image/illust_80208101_20210531_105240_MIN.jpg)"></div>
   
 
   <!-- navbar -->
@@ -108,20 +108,20 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">Sitemap小踩坑</h1>
+          <h1 class="title-wrap">2022第十三周周报</h1>
           <h2 class="title-sub-wrap">
             <strong>Viglong</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2022-01-12T14:27:30.000Z" itemprop="datePublished">2022-01-12</time>
+            <time  class="article-date" datetime="2022-04-02T03:00:00.000Z" itemprop="datePublished">2022-04-02</time>
           </h2>
           <ul class="wrap-list dark">
   
-    <li><a href="/categories/2022%E5%AF%92%E5%81%87/">📒 2022寒假</a></li>
+    <li><a href="/categories/2022%E6%98%A5%E5%A4%8F%E5%AD%A6%E6%9C%9F/">📒 2022春夏学期</a></li>
   
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/%E6%90%AD%E5%BB%BA%E8%B8%A9%E5%9D%91/">🏷️ 搭建踩坑</a></li>
+    <li><a href="/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">🏷️ 日常记录</a></li>
   
 </ul>
         </div>
@@ -146,21 +146,21 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h3 id="sitemap小踩坑"><a href="#sitemap小踩坑" class="headerlink" title="sitemap小踩坑"></a>sitemap小踩坑</h3><p>昨天下午使用Google Console验证了网站。之后又向Google提交了sitemap，这里小踩一坑（其实大概是虚惊一场）。</p>
-<p>在网上搜索“hexo+sitemap”关键字就可以找到很多相关的教程，流程基本上也都是一样的：</p>
-<p>第一步先安装hexo-generator-sitemap，在Hexo目录下打开Git Bash，然后使用如下命令安装</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
-
-<p>即可安装sitemap的生成工具（第一行可以用于Google的站长工具，第二行是百度的，两个类似，因为我的博客用的是github page服务，所以就没有向百度提交），然后在根目录的_config.yml中找到url一项进行修改，改成自己的域名即可。</p>
-<p>之后每一次使用部署命令：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>都会自动生成站点地图文件sitemap.xml。在public文件夹里面就可以找到，部署的时候也能够同步上去。</p>
-<p>接着做好在Google上的网站验证（具体方法网上也很多，主流的方案是部署一个.html的文件到代码仓库里面进行验证）。验证完成后我提交了sitemap，显示成果提交但立刻在status一栏出现“couldn’t fetch”红色字样。点进去详情没有报错，只是显示“sitemap could not be read”。几乎是本能地把这种提示和各种oj的报错联系起来——那么肯定是我哪里写错了。</p>
-<p>结果在百度上兜了好几圈，没有找到什么有用的解答信息，因为一般来说这种生成器也不会出现什么格式错误。</p>
-<p>最后还是在Google上找到了解答，先是看到了下面这篇回答：<a target="_blank" rel="noopener" href="https://support.google.com/webmasters/thread/12746546/error-sitemap-could-not-be-read-couldn-t-fetch?hl=en">https://support.google.com/webmasters/thread/12746546/error-sitemap-could-not-be-read-couldn-t-fetch?hl=en</a></p>
-<p>虽然问题不同，但是解答的老哥非常耐心地说了“一般而言都是处于pending状态”。我当时看到寻思是会显示“Pending”的提示字样而不是出现一个红色的字体。又看了几篇文章，没有什么头绪，正准备在自己投递问题的时候看到了另一篇文章：<a target="_blank" rel="noopener" href="https://www.jcchouinard.com/sitemap-could-not-be-read-couldnt-fetch-in-google-search-console/">https://www.jcchouinard.com/sitemap-could-not-be-read-couldnt-fetch-in-google-search-console/</a></p>
-<p>直接命中问题所在，按照文中所述方式进行访问验证，谷歌爬虫确实可以访问到我的sitemap，而我也没有写错任何东西。说明接下来的事情就是交给时间和谷歌了。应该过段时间就能在谷歌上搜到博客了。</p>
+        <h1 id="我们的“宿命”就是虚空deBUG"><a href="#我们的“宿命”就是虚空deBUG" class="headerlink" title="我们的“宿命”就是虚空deBUG"></a>我们的“宿命”就是虚空deBUG</h1><p>今日去医院做冷冻，拿了号，从两点钟空等了三个小时（具体原因大概是校医院根本没法做冷冻以及楼下的志愿者对线上预约流程完全没概念并极不负责任地将他自以为是的想法介绍给了我这个第一次去校医院的“校医院小白”）。经过三个小时和各位同学病友的共同等待，我似乎觉得自己正在参演一场存在主义大戏《等待医生》：这个皮肤科的医生下午的三个小时只看了十个左右病例（隔壁眼科和外科都看了三四十个），三成时间不知所踪；在她坐在桌前的那一个多小时，由于校医院医生客户端的奇妙bug（具体来说是如果在刷医疗电子凭证的时候刷了支付宝付款码，系统就会崩溃），她接连整坏了房间里四台电脑的三台，医生遂大骂软件开发人员；剩下一点可怜的看病时间，情绪极不稳定的她对患者提出的各种疑问阴阳怪气，并且时不时大动肝火（“就是有你们这些人我今天才看得这么慢！”）。这样一个医生加上这样一个志愿者，我只能说，想不难受都难。</p>
+<p>魔幻的下午让我不禁想起我等程序员的宿命——不知从何时开始，我们都成了一个个虚空debugger。我觉得在计算机专业学生的日常中，最难受的事情莫过于虚空debug了。代码的测试点过不去，却不知道哪里错了；有一些猜想和调整的思路，却不敢下手；最后下手做了，推倒重来了，答案还是错误。</p>
+<p>有一次面向对象编程的实验课，第一道题是简单的质因数分解，某一测试点给我报了运行超时错误。我想啊，是不是题目给的数字太大了，需要用到一些大数质因数分解的专用方法，为此还去查了资料，发现还真有利用一些数学定理和快速幂快速乘算法做优化的一套模板程序。然而实现起来确实麻烦不少。当我觉得我找到了正确的道路，但我的室友告诉我：仅仅只用最笨最复杂的方法，也可以通过所有的测试点。最后，这节实验课以我完全放弃原来的算法，拥抱最笨的算法通过所有测试点而告终。因为我实在搞不清楚到底是哪里错了。</p>
+<p>还有一次是实现一个特殊的树状数据结构（AVL_Tree），插入少量的数据完全看不出来问题，但一旦数据量达到三位数，程序就会崩溃。最后我不得不在几百次重复操作和同样数量的节点大海中找出算法的bug。好在最后我的debug能力还算够用，迅速地摸出了断点调试的一些技巧，经过横跨一周多个时点总计大约十几小时的调试，终于是修正了所有的bug。</p>
+<p>这样的例子还有很多，最近碰见尤其之多。我有一位室友，正在做计算机体系结构相关的实验，他的实验日常是，通过几十条在十五寸屏幕上反反复复的仿真波形曲线，找到自己设计部件存在的问题。这学期他有两次心态完全炸裂，因为作业临期，实现部分也已经完成，但在调试阶段就是找不到问题所在。近的这一次是在前几天，当晚快断电的时候他把宝压在重构某一部分设计上，因为第二天就是作业Deadline了。然而这位仁兄押宝失败，遂冲屏幕大发雷霆。现在想来或许他自己也会觉得有些搞笑，但是找不出来bug所在这种事情，换谁心情都不会太好。不过情绪发泄完了，当天晚上断电之后他还是搬起凳子坐到卫生间调代码去了（卫生间有一个晚上不断电的插座）。功夫不负有心人，凌晨三点半他终于调完了整个设计，但三点半的他不知道的是，大概是因为太多同学没法按时完成任务，这项作业的提交临时延期了。</p>
+<p>其实如果说问题出在自己的身上倒也还好，毕竟责任在自己身上，写出了出问题的代码，一方面或许说是运气不好，另一方面反映的是经验不足嘛，顶多可以说是高级版的“自作自受”。问题是往往有的时候，碰见问题并不是自己哪里做错了什么，而是完全被别人误导了。比如这次去医院，又比如我开学重装vivado三次这种事情。心理上难免会有“明明不是我的事情，却要我连带着受气”的感觉。我倒不是说要同情同理这些处理不好事情的人（一般来说，出现这样的事情，要么就是处理事情的人态度不好，自己做不好事情还要推卸责任；要么就是面对的完全是一个非人物体，比如说安装程序这种），大多数时候“跟着受气”就意味着我已无法在常规认知中对这些人（或者物）有同理心。</p>
+<p>更加让人心理不平衡的是，有些人采取了和你一样甚至比你简单的做法，几乎没有碰到什么障碍就走通了同一条路。这种时候心里大概除了“我不理解”以外，就只有“我不理解”了。说到这我就想起前几天安装Qt，同一个在线下载器，竟然登录之后出现了不同的下载界面（我的是商业版，多出来一些我现在根本用不到的功能，却要我为此付费；而我的同学用同一个程序，安装的是社区版，不用付费），反反复复重新安装了三四次（每次安装都要等待三个小时），才终于明白其实是我账号的问题（填了公司名字之后就再也无法复原了）。后来还费了一个早上从源代码编译了一个驱动，最后发现好像软件已经自带了。</p>
+<p>写到这里我都有点不知道该怎么概括此类“虚空debug”事件了。笼统地说，大概就是付出了时间、精力、金钱以及情绪、信任甚至价值认同（有一种说法是，人在做某些选择的时候依照的标准其实是对未来行为方式的期望），但是却得到一场空的结果。而失败的原因，甚至无法复盘出来。无法复盘的失误无疑是最让人懊恼的一点了，否则我们好歹可以说“至少增长了经验”，可以说“重过程轻结果”，失败的实验数据也因此有了参考价值（似乎从法律上讲，如果保护得当，也算得上是“商业机密”）。还未复盘错误的一次经历，无论从结果上还是过程上，都否定了我们付出的心血和代价，再加上使用几乎同样操作的别人竟做出了效果，就更让人难以接受了。</p>
+<p>标题是我的中二病，实际上说的是在程序员的日常里，这种事情大概是司空见惯了。对于个人来说，其实遇到此类事件的可选解决方案也很少，我能想到的无非是收拾好心情，先把情绪从这些事件中抽离，再去慢慢找问题了。不过，要收拾好心情并不容易，丧失掉的热情也很难在毫无回应的调试过程中重新燃起。好像在遇到这些事情的时候，我们更倾向于得到一个“情绪解”，有的时候我们期待回应，而瞎折腾了一番就像是被人辜负信任一般，所以大概就会去给对面贴上一些“背信弃义”的情绪标签聊以自慰。</p>
+<p>或许把工程问题看成工程问题更为有效，在进行工程时就不要带入自己的情绪，更要注意自己那些无意识地将情绪、信任和价值认同带入到完成工程的过程当中。尤其是对个人的评价，不要带入到过程当中。想起在应试教育时期考砸了，总会有人说“努力了就没有遗憾”。我觉得应该以更为专业的态度来看待这些问题，或者说，在开始做事情之前就要做好失败风险的预期和备案，留好时间、精力和情绪。而不是失败认栽之后强行在过程中找到点可以安慰的价值，所谓“努力过没有遗憾”，恐怕也难以填补期望与现实的巨大心理落差吧。</p>
+<p>（这周的周报写得实在混乱，充其量就是一条线上引出的一些近期观察到或者经历的事件的总集，并且带有比较强的情绪化印记。最近好像大家的生活都挺魔幻的，就是希望大家都能有个强大的心脏吧，情绪问题尽量放在情绪层面解决，切勿上升）</p>
+<h1 id="本周书摘"><a href="#本周书摘" class="headerlink" title="本周书摘"></a>本周书摘</h1><p>首先，我没听说过“35岁年龄门槛”的说法。但如果你35岁画的东西，人才市场里一大把25的人也能画。他们要的薪资大概率比你低，还有更多的成长空间，你是雇主你怎么选？<br>其次，我个人的职业规划上，从一开始就在豪赌：拼上一切让自己变得被需要且不可替代。运气好，35岁还没到，替代成本已经很高了。所以那种按部就班的职业路线，我并不是很了解该怎么办。<br>不过，“跟随主流画风”，个人认为是风险很高的做法。一个画风火了才开始学，等你学会了，其他人也会了。人才市场上，“供不应求”立刻变成“供过于求”。反而会加深年龄焦虑。<br>稀缺性是议价权的必要条件之一，这思路总归是管用的。<br>——@__千九的微博</p>
+<p>要买粉丝的公众号手里有钱，发布任务的人手里有人头，你们有什么？有自己。有自己的什么？不是你们的脑力，不是你们的体力，只是你们的一点时间，用指头点一下关注。那么在这个生意里面，你们所能做出的贡献是最小的，技术含量是最低的，而有你们一样想法的人却很多。所以，你们在一开始就注定要吃亏上当，因为你们所做的事情价值最低，付出最小，供应却最是充足。简单容易来钱快，其实就是这个意思——随时可以跳单，反正还有人源源不断地前来尝试挣快钱。理论上来讲，这门生意宁愿把钱花在吸引更多渴钱的人来领任务，也不应该花在支付任务酬劳上。换了是你主持生意，你估计也会那么想。<br>也就是说，当你想要挣快钱的时候，你就已经把自己的价值给当掉了，你自己就已经不值钱了。每做一份工，每花一分钟，人都应该思考这有没有提升自己的价值？一个人开十年车，那么他就是有十年驾驶经验的司机，他就应该比一年驾龄的人拿更多钱。但是，你们刷十年任务下来能有什么积累么？难道可以告诉别人，我有十年关注经验，成功关注了100000个号？这个经验能换来任何认可任何金钱吗？关注100年你还是在原地打转，对于改善你的境遇没有一毛钱帮助。但是你的时间却被占用了，不能用在其他有价值的事情上。你以为是在挣快钱，其实你是在耗自己的命与气数。<br>——槽边往事</p>
+<p>四月了，封面给小薰</p>
+<p>画师pixiv_id：Hotaruzzzz</p>
 
       </section>
 
@@ -168,32 +168,16 @@
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="/image/eva1.jpg"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2022/01/15/%E4%BB%8E%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E8%A7%86%E8%A7%92%E7%9C%8B%E5%85%83%E5%AE%87%E5%AE%99/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">从普通人的视角看一看元宇宙</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="/image/56417589_p0.jpg"></div>
+      <div class="card-cover" background-image-lazy data-img="/image/illust_69130256_20200314_132203.jpg"></div>
     
     <div class="card-text">
       
-        <a href="/2022/01/11/%E5%85%B3%E4%BA%8E%E6%88%91%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2%E8%BF%99%E4%BB%B6%E4%BA%8B/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">关于开始写博客这件事</h2>
+        <a href="/2022/03/27/2022%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%91%A8%E5%91%A8%E6%8A%A5/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">2022第十二周周报</h2>
         </a>
       
       <div class="card-text--row">Older</div>
