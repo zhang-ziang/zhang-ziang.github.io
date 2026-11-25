@@ -1,0 +1,28 @@
+{{- $links := hugo.Data.links -}}
+<div class="not-prose grid grid-cols-1 gap-4 sm:grid-cols-2">
+  {{- range $links }}
+  {{- $name := .name }}
+  <a
+    class="flex items-center gap-3 rounded-xl border border-neutral-200 p-4 transition hover:border-primary-400 dark:border-neutral-700"
+    href="{{ .link }}"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {{- with .avatar }}
+    <img
+      class="h-10 w-10 shrink-0 rounded-full object-cover"
+      src="{{ . }}"
+      alt="{{ $name }}"
+      loading="lazy"
+      onerror="this.remove()"
+    >
+    {{- end }}
+    <div class="min-w-0">
+      <div class="truncate font-bold text-neutral-800 dark:text-neutral-100">{{ $name }}</div>
+      {{- with .description }}
+      <div class="truncate text-sm text-neutral-500 dark:text-neutral-400">{{ . }}</div>
+      {{- end }}
+    </div>
+  </a>
+  {{- end }}
+</div>

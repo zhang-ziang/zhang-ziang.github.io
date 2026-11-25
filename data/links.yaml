@@ -1,0 +1,36 @@
+# 友链数据：想加/删/调顺序，直接改这个文件
+# 顺序就是页面上的显示顺序
+# name  必填，显示的名字
+# link  必填，跳转地址
+# description  可选，副标题
+# avatar 可选，头像 URL；不填就只显示文字链接
+
+- name: zian-chen
+  link: https://zian-chen.github.io/
+  description: ""
+  avatar: https://zian-chen.github.io/images/icon.jpg
+
+- name: 我的pixiv主页
+  link: https://www.pixiv.net/users/39546389/
+  description: 日常画的一些画会放在这里
+  avatar: ""
+
+- name: Js2xxx - Mosi mita!
+  link: https://js2xx.xin/
+  description: ""
+  avatar: ""
+
+- name: 西西弗斯没问题
+  link: https://ryanfcr.github.io/
+  description: ""
+  avatar: ""
+
+- name: 小纸的书架
+  link: https://cswellessun.github.io/
+  description: ""
+  avatar: ""
+
+- name: 花翎的博客
+  link: https://hualingz.cn/
+  description: ""
+  avatar: ""
