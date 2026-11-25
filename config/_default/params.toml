@@ -75,7 +75,7 @@ forgejoDefaultServer = "https://codeberg.org"
   cardView = false
   cardViewScreenWidth = false
   layoutBackgroundBlur = false # only used when layout equals background
-  disableHeroImageFilter = false # only used when layout equals hero
+  disableHeroImageFilter = true # 关闭首页 hero 的主色渐变蒙版
 
 [article]
   showDate = true

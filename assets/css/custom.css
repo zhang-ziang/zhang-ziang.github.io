@@ -1,0 +1,17 @@
+/* 首页 hero：已关闭主题的主色渐变蒙版（disableHeroImageFilter = true），
+   banner 恢复为原本的亮色插画。主题在深色模式下会把标题和社交图标调成浅色，
+   在亮图上会看不清，所以这里把首页 hero 内的文字与图标固定为深色。
+   想改回跟随主题，删掉本文件即可。 */
+
+.rounded-2xl.shadow-xl > div h1,
+.rounded-2xl.shadow-xl > div h2 {
+  color: #27272a; /* zinc-800 */
+}
+
+.rounded-2xl.shadow-xl > div a[target="_blank"] {
+  color: #3f3f46; /* zinc-700 */
+}
+
+.rounded-2xl.shadow-xl > div a[target="_blank"]:hover {
+  color: #2563eb; /* primary-600 */
+}
