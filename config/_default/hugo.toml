@@ -43,8 +43,18 @@ enableEmoji = true
   filename = 'sitemap.xml'
   priority = 0.5
 
+# 兼容旧站的 /atom.xml（原 Hexo 用 atom 格式）
+[mediaTypes."application/atom+xml"]
+  suffixes = ["xml"]
+
+[outputFormats.Atom]
+  mediaType = "application/atom+xml"
+  baseName = "atom"
+  rel = "alternate"
+  isPlainText = false
+
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "Atom"]
 
 [related]
   threshold = 0
