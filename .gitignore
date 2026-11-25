@@ -1,0 +1,9 @@
+# Resources
+resources/_gen/
+public/
+.hugo_build.lock
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log

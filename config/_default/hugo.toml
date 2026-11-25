@@ -1,0 +1,71 @@
+# -- 站点配置 --
+# 迁移自 Hexo 6 / flex-block，保持原 URL 与评论 key 不变
+
+theme = "blowfish"
+baseURL = "https://zhang-ziang.github.io/"
+defaultContentLanguage = "zh-cn"
+defaultContentLanguageInSubdir = false
+
+# 保留路径大小写：旧站有 AI随想 这类大写路径
+disablePathToLower = true
+hasCJKLanguage = true
+timeZone = "Asia/Shanghai"
+
+enableRobotsTXT = true
+summaryLength = 70
+
+buildDrafts = false
+buildFuture = true
+
+enableEmoji = true
+
+# 旧站 GA（Hexo 那边没真正生效，先留空，需要再填）
+# googleAnalytics = ""
+
+[pagination]
+  pagerSize = 10
+
+# 兜底：本批文章都在 front matter 里写死了 url，这里只影响以后新写的文章
+[permalinks]
+  posts = "/:year/:month/:day/:filename/"
+
+[imaging]
+  anchor = 'Center'
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+  series = "series"
+
+[sitemap]
+  changefreq = 'daily'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[related]
+  threshold = 0
+  toLower = false
+
+    [[related.indices]]
+        name = "tags"
+        weight = 100
+
+    [[related.indices]]
+        name = "categories"
+        weight = 100
+
+    [[related.indices]]
+        name = "series"
+        weight = 50
+
+    [[related.indices]]
+        name = "authors"
+        weight = 20
+
+    [[related.indices]]
+        name = "date"
+        weight = 10

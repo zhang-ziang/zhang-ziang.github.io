@@ -1,0 +1,36 @@
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.5.1/dist/Valine.min.js"></script>
+
+<div id="valine_thread" class="mt-2"></div>
+
+<script>
+  (function () {
+    var el = document.getElementById('valine_thread');
+    if (!el) return;
+    new Valine({
+      el: '#valine_thread',
+      appId: 'vTbz71XbcTVBFWC6N2d4bI7I-gzGzoHsz',
+      appKey: 'JCp99yb66Lt56Wkl0uW2svp6',
+      avatar: 'mm',
+      placeholder: '随便说点什么呀~',
+      notify: true,
+      visitor: true,
+      pageSize: 10,
+      // 关键：与旧站完全一致的评论 key
+      path: window.location.pathname
+    });
+  })();
+</script>
+
+<style>
+  /* Valine 没有暗色主题，这里做最小适配 */
+  html.dark #valine_thread .v * { border-color: rgb(64 64 64); }
+  html.dark #valine_thread .v .vwrap,
+  html.dark #valine_thread .v .vcard { background: transparent; }
+  html.dark #valine_thread .v .vinput,
+  html.dark #valine_thread .v .veditor,
+  html.dark #valine_thread .v .vcontent { color: rgb(212 212 212); }
+  html.dark #valine_thread .v .vbtn { color: rgb(212 212 212); border-color: rgb(64 64 64); }
+  html.dark #valine_thread .v .vbtn:active { background: rgb(38 38 38); }
+  html.dark #valine_thread .v .vcount { color: rgb(115 115 115); }
+</style>

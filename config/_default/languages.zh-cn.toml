@@ -1,0 +1,23 @@
+disabled = false
+locale = "zh-CN"
+label = "简体中文"
+weight = 1
+title = "Viglong的海岸线"
+
+[params]
+  displayName = "ZH"
+  isoCode = "zh-CN"
+  rtl = false
+  dateFormat = "2006年1月2日"
+  description = "正在努力学计算机和绘画"
+
+[params.author]
+  name = "Viglong"
+  image = "image/nora_logo.png"
+  headline = "正在努力学计算机和绘画"
+  bio = "浙江大学人工智能专业，轻度二次元，正在练习画美少女。"
+  links = [
+    { github = "https://github.com/zhang-ziang/" },
+    { link = "https://www.pixiv.net/users/39546389/" },
+    { twitter = "https://twitter.com/" },
+  ]
