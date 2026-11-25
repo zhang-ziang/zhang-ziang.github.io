@@ -19,5 +19,5 @@ title = "Viglong的海岸线"
   links = [
     { github = "https://github.com/zhang-ziang/" },
     { link = "https://www.pixiv.net/users/39546389/" },
-    { twitter = "https://twitter.com/" },
+    { huggingface = "https://huggingface.co/Viglong" },
   ]
