@@ -73,14 +73,20 @@ winget install Hugo.Hugo.Extended
 
 | 旧站 | 新站 | 影响 |
 | --- | --- | --- |
-| `/atom.xml` | `/index.xml` | RSS 订阅地址变了，需通知订阅者或自行加别名 |
+| `/atom.xml` | `/index.xml`（`/atom.xml` 也已保留） | 无影响：已通过自定义 output format 生成 Atom 格式的 `/atom.xml`，旧订阅地址继续可用 |
 | `/search/` 独立页面 | 顶栏搜索图标（⌘K / Ctrl+K） | 旧 URL 不再存在 |
 | 首页列表 `/page/2/` | 全部文章在 `/posts/`，分页在 `/posts/page/2/` | 旧分页链接失效 |
 | 无归档页 | `/posts/` 按年份分组；`/archives/` 通过 alias 重定向到 `/posts/` | 旧链接仍可用 |
 
+## 部署状态
+
+- 2026-11-25 已推送至 `main` 并通过 GitHub Actions 发布到 `gh-pages`。
+- 线上验证：首页、文章页、`/atom.xml`、`/index.xml`、`/about/`、`/links/`、`/message/`、`/archives/` 全部 200。
+
 ## 待办
 
-- [ ] 第 37 篇 `20240709准研究生.md` 目前是 `draft: true`（旧站从未发布过它）。要发布就删掉那行，再 `hugo server -D` 确认。
-- [ ] RSS 地址变更是否要加 `/atom.xml` 兼容跳转。
-- [ ] 旧站 `/search/`、`/page/N/` 若被外部引用较多，是否需要补 alias。
+- [ ] 第 37 篇 `20240709准研究生.md` 目前是 `draft: true`（旧站从未发布过它，按要求保持草稿）。要发布就删掉那行，再 `hugo server -D` 确认。
+- [ ] **Valine 连通性待确认**：从外部查 LeanCloud，应用本身存活（`/1.1/date` 返回 200），但 `Comment` 类返回 401。可能是类权限限制，也可能是 AppKey 已轮换。请在浏览器打开任意老文章，看评论区有没有内容；若为空，去 LeanCloud 控制台复制当前 AppKey，替换 `layouts/partials/comments.html` 里那一行即可。
+- [ ] 旧站 `/search/`、`/page/N/` 已确认可放弃，无需补 alias。
 - [ ] Google Analytics：旧配置里的 `G-W8NB0838L7` 在 hexo 侧未真正生效，需要就在 `config/_default/hugo.toml` 里打开 `googleAnalytics`。
+- [ ] 可选性能优化：41 张原图共 29.6 MB，转 WebP 可压到 6 MB 左右。
