@@ -5,6 +5,7 @@ url: "/2023/05/11/AI随想/"
 featureimage: "image/20220205_110018.jpg"
 categories: ["2023"]
 tags: ["日常记录"]
+draft: true
 ---
 # AI随想
 
