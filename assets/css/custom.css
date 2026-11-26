@@ -38,3 +38,19 @@ main footer {
   max-width: none;
 }
 
+/* ---------- 文章题图：保持原比例，不裁切 ----------
+   主题默认给 .single_hero_round 设了 max-height:50vh + object-fit:cover，
+   宽图会被压到半屏高再裁掉上下。这里改成"等比缩放"：
+   宽图按内容宽度收缩，竖图按最大高度收缩，居中显示。
+   想改竖图上限就动 max-height（70vh = 视口高度的 70%）。 */
+
+main img.single_hero_round {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+
